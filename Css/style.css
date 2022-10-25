@@ -1,0 +1,78 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.hero{
+    height: 100vh;
+    width: 100%;
+    background-image: url(../Images/background.png);
+    background-size: cover;
+    background-position: center;
+}
+
+nav{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Josefin', sans-serif;
+    padding: 15px 8% 10px 8%;
+    background: rgb(0, 0, 0);
+}
+
+.logo{
+    color: rgb(255, 251, 251);
+    font-size: 35px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+span{
+    color: rgba(255, 7, 7, 0.646);
+    font-style: italic;
+    font-family: 'Josefin';
+    font-size: 40px;
+}
+
+nav ul li{
+    display: inline;
+    list-style: none;
+    padding: 20px;
+    text-transform: italic;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(242, 10, 10);
+    padding: 10px;
+    font-family: 'Josefin';
+    font-size: 20px;
+    transition: transform .24s;
+}
+
+nav ul li a:hover{
+    color:rgba(254, 253, 235, 0.782);
+    transition: .3s;
+    text-decoration: underline white;
+}
+
+.btn{
+    padding: 5px;
+    border: 1px solid transparent;
+    background: rgb(242, 10, 10);
+    border-radius: 10px;
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: transform .12s;
+}
+.btn:hover{
+    transform: scale(1.2);
+    background: white;
+    color: rgb(242, 10, 10);
+
+}
