@@ -8,7 +8,7 @@
 .hero{
     height: 100vh;
     width: 100%;
-    background-image: url(../Images/background.png);
+    background-image: linear-gradient(rgba(39, 38, 38, 0.657), rgba(0,0,0,0.4)),url(../Images/it.jpg);
     background-size: cover;
     background-position: center;
 }
@@ -19,19 +19,21 @@ nav{
     align-items: center;
     justify-content: space-between;
     font-family: 'Josefin', sans-serif;
-    padding: 15px 8% 10px 8%;
-    background: rgb(0, 0, 0);
+    padding: 20px 20px 20px 20px;
+    background:rgba(249, 247, 247, 0.286);
+    box-shadow: 2px 2px 2px 1px rgba(19, 27, 68, 0.578);
 }
 
 .logo{
     color: rgb(255, 251, 251);
-    font-size: 35px;
+    font-size: 40px;
     letter-spacing: 1px;
     cursor: pointer;
+    font-family: 'Josefin';
 }
 
 span{
-    color: rgba(255, 7, 7, 0.646);
+    color: rgb(255, 128, 0);
     font-style: italic;
     font-family: 'Josefin';
     font-size: 40px;
@@ -46,11 +48,12 @@ nav ul li{
 
 a{
     text-decoration: none;
-    color: rgb(242, 10, 10);
+    color: rgb(255, 128, 0);
     padding: 10px;
     font-family: 'Josefin';
-    font-size: 20px;
+    font-size: 25px;
     transition: transform .24s;
+    font-weight: bold;
 }
 
 nav ul li a:hover{
@@ -62,7 +65,7 @@ nav ul li a:hover{
 .btn{
     padding: 5px;
     border: 1px solid transparent;
-    background: rgb(242, 10, 10);
+    background: rgb(255, 128, 0);
     border-radius: 10px;
     color: white;
     font-size: 25px;
@@ -73,6 +76,78 @@ nav ul li a:hover{
 .btn:hover{
     transform: scale(1.2);
     background: white;
-    color: rgb(242, 10, 10);
+    color: rgb(255, 128, 0);
 
+}
+
+.content{
+    position: absolute;
+    top: 50%;
+    left: 8%;
+    transform: translateY(-50%);
+}
+
+h1{
+    color: wheat;
+    margin: 20px 0px 20px;
+    font-size: 75px;
+}
+
+h1 span{
+    color: rgb(237, 159, 14);
+    margin: 20px 0px 20px;
+    font-size: 75px;
+}
+
+h4{
+    color: blanchedalmond;
+    letter-spacing: 4px;
+    font-size: 20px;
+}
+
+h3{
+    color: wheat;
+    font-size: 25px;
+    margin-bottom: 50px;
+}
+
+.get form{
+    width: 380px;
+    max-width: 100%;
+    position: relative;
+}
+
+.get form input:nth-child(1){
+    display: inline-block;
+    width: 100%;
+    padding: 20px 130px 20px 20px;
+    border: 2px solid rgb(220, 126, 49);
+    outline: none;
+    border-radius: 30px;
+}
+
+.get form input:nth-child(2){
+    position: absolute;
+    display: inline-block;
+    outline: none;
+    margin: 5px;
+    top: 3px;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 30px;
+    background-color: rgb(255, 128, 0);
+    color: wheat;
+    font-size: 20px;
+    font-weight: bold;
+    box-shadow: 0px 0px 2px 2px rgba(255, 128, 0, 0.826);
+    cursor: pointer;
+    transition: transform .12s;
+    right:4px
+    
+
+}
+.get form input:nth-child(2):hover{
+    
+    transform: scale(.9);
+    transition: .25s;
 }
